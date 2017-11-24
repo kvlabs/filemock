@@ -27,7 +27,8 @@ public class SampleTest {
     @MockFile(path = "/META-INF/mock/v1/get_item_response.json")
     SampleResponse sample;
     
-    @Before
+    @Before // JUnit 
+    @BeforeMethod(alwaysRun=true) // TestNG
     public void setUp() {
         FileMockAnnotations.initMocks(this);
     }
