@@ -1,0 +1,16 @@
+---
+boolean: true
+integer: 123
+string: File Mock
+array:
+- 1
+- 2
+- 3
+sub_object:
+  a: b
+  c: d
+  e: f
+meta_data:
+  a: b
+  c: d
+  e: f

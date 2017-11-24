@@ -1,0 +1,10 @@
+{
+  "boolean": true,
+  "integer": 123,
+  "string": "File Mock",
+  "sub_object": {
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  }
+}
