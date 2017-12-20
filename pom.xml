@@ -125,7 +125,6 @@
         </plugins>
     </reporting>
     
-    
     <repositories>
         <repository>
             <id>central</id>
