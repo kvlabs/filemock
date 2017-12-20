@@ -9,12 +9,12 @@ FileMock is a simple yet powerful java library to convert Jason file into object
 #### Include maven dependecy 
 ```xml 
 <dependency>
-    <groupId>io.kvlabs.filemock</groupId>
+    <groupId>io.github.kvlabs.filemock</groupId>
     <artifactId>core</artifactId>
     <version>1.0.0</version>
 </dependency>
 <dependency>
-    <groupId>io.kvlabs.filemock</groupId>
+    <groupId>io.github.kvlabs.filemock</groupId>
     <artifactId>junit</artifactId>
     <version>1.0.0</version>
 </dependency>
