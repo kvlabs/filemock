@@ -22,14 +22,14 @@ import java.lang.annotation.Target;
  * 
  *   public class SampleTest {
  * 
- *       @MockFromFile(path = "/META-INF/mock/user.json")
+ *       &#064;MockFromFile(path = "/META-INF/mock/user.json")
  *       User user;
- *       @MockFromFile(path = "/META-INF/mock/item.json",safeMode=false)
+ *       &#064;MockFromFile(path = "/META-INF/mock/item.json",safeMode=false)
  *       Item item;
- *       @MockFromFile(path = "/META-INF/mock/recommendation.json",mapper=Mapper.GSON)
+ *       &#064;MockFromFile(path = "/META-INF/mock/recommendation.json",mapper=Mapper.GSON)
  *       Recommendation recommendation;
  *
- *       @Before 
+ *       &#064;Before 
  *       public void initMocks() {
  *           FileToMockAnnotations.initMocks(this);
  *       }
@@ -42,12 +42,11 @@ import java.lang.annotation.Target;
  * In above example, <code>initMocks()</code> is called in @Before (JUnit4) method of test's base class.
  * For JUnit3 <code>initMocks()</code> can go to <code>setup()</code> method of a base class.
  * <strong>Instead</strong> you can also put initMocks() in your JUnit runner (@RunWith) or use the built-in
- * {@link io.kvlabs.file.mock.runners.FileToMockJUnitRunner}.
+ * io.kvlabs.filemock.junit.runners.FileToMockJUnitRunner.
  * </p>
  *
- * @see FileToMock#mock(Class)
- * @see FileToMockAnnotations#initMocks(Object)
- * @see io.filemock.FileToMockAnnotations
+ * @see io.kvlabs.filemock.core.FileMock
+ * @see io.kvlabs.filemock.core.anotation.FileMockAnnotations
  * @author kanchana-prasanth
  */
 @Documented
@@ -59,7 +58,7 @@ public @interface MockFile {
      * If set true json mapper will not through any mapping exception if the
      * json schema have mismatch with the given pojo
      *
-     * @return
+     * @return true of on safe mode
      */
     boolean safeMode() default true;
 

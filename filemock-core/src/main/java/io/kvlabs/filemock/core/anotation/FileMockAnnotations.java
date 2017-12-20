@@ -16,7 +16,7 @@ public class FileMockAnnotations {
      * Initializes objects annotated with FileMock annotations for given
      * testClass: {@link io.kvlabs.filemock.core.anotation.MockFile}
      *
-     * @param testClass
+     * @param testClass as class to test
      * @since 1.0.0
      */
     public static void initMocks(Object testClass) {

@@ -11,6 +11,7 @@ public interface Deserializer {
     /**
      * Un marshal json file to Object
      *
+     * @param <T> as type of output
      * @param path as the patch to json resource
      * @param tclass as the response class
      * @return un-marshaled value of json
@@ -21,9 +22,10 @@ public interface Deserializer {
     /**
      * Un marshal json file to Object
      *
+     * @param <T> as type of output
      * @param path as the patch to json resource
      * @param tclass as the response class
-     * @param safeParse
+     * @param safeParse true of on safe mode
      * @return un-marshaled value of json
      * @since 1.0.0
      */
